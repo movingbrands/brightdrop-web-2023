@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
-import { overpass } from '@/style/fonts'
+import { Overpass } from 'next/font/google'
+
+export const overpass = Overpass({ subsets: ['latin'] })
 
 import '../style/global.css'
 

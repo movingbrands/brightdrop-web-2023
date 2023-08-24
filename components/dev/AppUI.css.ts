@@ -4,7 +4,7 @@ import { globalStyle, style } from "@vanilla-extract/css";
 
 export const container = style({
     width: '100%',
-    height: '100vh',
+    minHeight: '100vh',
     background: offwhite,
     padding: padding.large
 })
@@ -18,7 +18,8 @@ export const article = style({
 })
 
 export const header = style({
-    padding: `16px 0`
+    padding: `16px 0`,
+    textTransform: 'capitalize'
 })
 
 export const card = style({

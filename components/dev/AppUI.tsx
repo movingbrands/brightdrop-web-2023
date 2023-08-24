@@ -6,7 +6,7 @@ import { h3 } from "@/style/typography.css"
 
 export const AppUI = () => {
     return (
-        <section className={container}>
+        <section className={clsx(container)}>
             <section className={section}>
                 <h1 className={clsx(header, h3)}>Prototype</h1>
                 <Link href="/site" className={clsx(link, interactable)}>

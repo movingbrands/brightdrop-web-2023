@@ -7,14 +7,14 @@ import LottieComponent, {
 
 import type { AnimationName } from './animations'
 import * as animations from './animations'
-import { placeholder } from './LottieAnimation.css'
+import { placeholder } from './AnimatedIcon.css'
 
 const useLottieAnimation = (animation: AnimationName) => {
   const [animationData, setAnimationData] = useState<object>()
 
-  const fetchAnimation = async () => {
+  const fetchAnimation = async (name: AnimationName) => {
     try {
-      const data = await animations[animation]()
+      const data = await animations[name]()
       setAnimationData(data)
     } catch (e) {
       console.log(e)
@@ -22,25 +22,25 @@ const useLottieAnimation = (animation: AnimationName) => {
   }
 
   useEffect(() => {
-    fetchAnimation()
-  }, [])
+    fetchAnimation(animation)
+  }, [animation])
 
   return animationData
 }
 
-interface LottieAnimation {
+interface AnimatedIcon {
   animation: AnimationName
   loop?: boolean
   play?: boolean
   size?: number
 }
 
-export const LottieAnimation = ({
+export const AnimatedIcon = ({
   animation,
   loop = false,
   play = true,
   size = 200
-}: LottieAnimation) => {
+}: AnimatedIcon) => {
   const animationData = useLottieAnimation(animation)
   const ref = useRef<any>()
 
