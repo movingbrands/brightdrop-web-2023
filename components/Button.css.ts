@@ -1,6 +1,6 @@
-import {midblue, white} from '@/style/colors'
-import {buttonHeight} from '@/style/sizes'
-import {style, styleVariants} from '@vanilla-extract/css'
+import { midblue, white } from '@/style/colors'
+import { buttonHeight } from '@/style/sizes'
+import { style, styleVariants } from '@vanilla-extract/css'
 
 const base = style({
   height: buttonHeight.small,
