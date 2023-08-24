@@ -5,7 +5,7 @@ import {footer, section, ul, visible} from './Footer.css'
 import {h1, h2, p} from '@/style/typography.css'
 import Link from 'next/link'
 import {Route} from '@/sitemap'
-import {Logo} from '../Navigation/parts/Logo'
+import {Logo} from '../GlobalNavigation/parts/Logo'
 import {useAppStore} from '@/utils/app-store'
 
 export const Footer = () => {

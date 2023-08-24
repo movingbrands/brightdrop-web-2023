@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 import { AppStore } from '@/components/AppStore/AppStore'
-import { Navigation } from '@/components/Navigation/Navigation'
+import { Navigation } from '@/components/GlobalNavigation/Navigation'
 import { Footer } from '@/components/content/Footer'
 import { AnimatedPageContainer } from '@/components/AnimatedPageContainer'
 
