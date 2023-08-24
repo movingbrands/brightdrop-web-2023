@@ -36,13 +36,13 @@ const Page = () => {
       </Section>
       <Section inset>
         <Title headline="Key features" />
-        <Placeholder>
+        <Placeholder style={{ position: 'sticky', top: 80, background: "rgb(220,220,220)", aspectRatio: `2.5 / 1`, zIndex: 1 }} >
           <h1 className={h3}>Key feature 1</h1>
         </Placeholder>
-        <Placeholder>
+        <Placeholder style={{ position: 'sticky', top: 120, background: "rgb(190,190,190)", aspectRatio: `2.5 / 1`, zIndex: 2}} >
           <h1 className={h3}>Key feature 2</h1>
         </Placeholder>
-        <Placeholder>
+        <Placeholder style={{ position: 'sticky', top: 160, background: "rgb(160,160,160)", aspectRatio: `2.5 / 1`, zIndex: 3 }} >
           <h1 className={h3}>Key feature 3</h1>
         </Placeholder>
       </Section>

@@ -1,29 +1,44 @@
 'use client'
 
 import clsx from "clsx";
-import { animatedPlaceholder, background, placeholder, placeholderVisible } from "./Placeholder.css";
-import { useRef } from "react";
+import { animatedPlaceholder, backgroundFill, placeholder, placeholderVisible } from "./Placeholder.css";
+import { CSSProperties, useMemo, useRef } from "react";
 import { useInView } from "framer-motion";
 
+type Sticky = {
+    align: 'top' | 'bottom'
+    amount: string | number
+}
 interface Placeholder {
     children?: React.ReactNode;
     blank?: boolean
     animated?: boolean
+    style?: Partial<CSSProperties>
 }
 
-const BasicPlaceholder = ({ children, blank = false }: Placeholder) =>
-    <div className={clsx(placeholder, !blank && background)}>{children}</div>
 
+const BasicPlaceholder = ({ children, style, blank = false }: Placeholder) => {
 
-const AnimatedPlaceholder = ({ children, blank = false }: Placeholder) => {
+    return (
+        <div className={clsx(placeholder, !blank && backgroundFill)} style={style}>{children}</div>
+    )
+}
+
+const backgroundColor = `rgb(230,230,230)`
+
+const AnimatedPlaceholder = ({ children, style, blank = false }: Placeholder) => {
     const ref = useRef<HTMLDivElement>(null)
     const isInView = useInView(ref, { once: true, amount: 0.25 })
 
     return (
-        <div ref={ref} className={clsx(placeholder, animatedPlaceholder, !blank && background, isInView && placeholderVisible)}>{children}</div>
+        <div
+            ref={ref}
+            style={style}
+            className={clsx(placeholder, animatedPlaceholder, !blank && backgroundFill, isInView && placeholderVisible)}>
+            {children}
+        </div>
     )
 }
-
 
 export const Placeholder = (props: Placeholder) =>
     props.animated ?

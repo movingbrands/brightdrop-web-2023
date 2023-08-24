@@ -1,6 +1,6 @@
 'use client'
 
-import { h1,  h3 } from "@/style/typography.css"
+import { h1, h3 } from "@/style/typography.css"
 import { header } from "./Title.css"
 import { useRef } from "react"
 import { useInView } from "framer-motion"

@@ -1,6 +1,6 @@
-import {navy, white} from '@/style/colors'
-import {footerHeight} from '@/style/sizes'
-import {style} from '@vanilla-extract/css'
+import { navy, white } from '@/style/colors'
+import { footerHeight } from '@/style/sizes'
+import { style } from '@vanilla-extract/css'
 
 export const footer = style({
   background: navy,

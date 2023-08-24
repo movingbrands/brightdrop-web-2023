@@ -27,7 +27,7 @@ export const placeholderVisible = style({
     transform: `translateY(0)`,
 })
 
-export const background = style({
-    background: 'rgba(0,0,0,0.25)',
+export const backgroundFill = style({
+    background: 'rgba(200,200,200,1.0)',
     borderRadius: 30,
 })

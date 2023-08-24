@@ -13,7 +13,6 @@ interface Tray {
   behavior: 'scroll' | 'centered' | 'grid'
 }
 
-
 export const Tray = ({ children, once = true, amount = 0.8, behavior }: Tray) => {
   const ref = useRef<HTMLElement>(null)
   const isInView = useInView(ref, { once, amount })

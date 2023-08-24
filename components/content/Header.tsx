@@ -13,11 +13,13 @@ export type ViewportEventHandler = (
   entry: IntersectionObserverEntry | null
 ) => void
 
+
 interface Header {
   children: React.ReactNode
   className?: string
   image?: string
 }
+
 interface AnimatedHeader extends Header {
   viewport?: {
     once?: boolean
@@ -40,7 +42,6 @@ export const AnimatedHeader = ({
   viewport = defaultViewport,
   onViewportEnter,
   onViewportLeave,
-  image,
   background = 'navy'
 }: AnimatedHeader) => (
   <motion.header
@@ -64,7 +65,6 @@ export const AnimatedHeader = ({
     onViewportLeave={onViewportLeave}
     onViewportEnter={onViewportEnter}
   >
-    {image && <HeaderImage src={image} />}
     {children}
   </motion.header>
 )

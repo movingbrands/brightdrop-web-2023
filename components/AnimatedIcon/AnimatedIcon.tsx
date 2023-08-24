@@ -1,9 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import LottieComponent, {
-  LottieProps
-} from 'react-lottie-player/dist/LottiePlayerLight'
+import LottieComponent from 'react-lottie-player/dist/LottiePlayerLight'
 
 import type { AnimationName } from './animations'
 import * as animations from './animations'
