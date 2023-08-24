@@ -1,10 +1,8 @@
-# BrightDrop Web 2023
-
 ![BrightDrop and Moving Brands](https://github.com/movingbrands/brightdrop-web-2023/assets/49916680/225ccbcf-d0cf-452d-9f42-17b6956c212b)
 
+## About
 This repository contains a collection of prototypes to support our collaboration to refresh [gobrightdrop.com](https://gobrightdrop.com) in mid-2023. The examples focus on use of motion throughout the site.
 
-## About
 This project is set up as a [next.js](https://nextjs.org/) app. The codebase uses the new [app router](https://nextjs.org/docs/app).
 
 ### Main dependencies
