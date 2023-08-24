@@ -36,6 +36,14 @@ export const AppUI = () => {
                         <p>Animated button states</p>
                     </article>
                 </Link>
+                <Link href="/components/navigation" className={clsx(link, interactable)}>
+                    <article className={card}>
+                        <h1>
+                            Navigation
+                        </h1>
+                        <p>Global navigation component</p>
+                    </article>
+                </Link>
                 <Link href="/components/type-motion" className={clsx(link, interactable)}>
                     <article className={card}>
                         <h1>

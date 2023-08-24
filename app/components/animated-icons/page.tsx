@@ -1,8 +1,5 @@
 import { AnimatedIcon } from '@/components/lottie/AnimatedIcon'
-// import { section, wrapper } from '../page.css'
 import clsx from 'clsx'
-// import { col } from '@/style/theme.css'
-// import { p } from '@/style/typography.css'
 import { AnimationName } from '@/components/lottie/animations'
 import { card, container, header, section } from '@/components/dev/AppUI.css'
 import { h3 } from '@/style/typography.css'
