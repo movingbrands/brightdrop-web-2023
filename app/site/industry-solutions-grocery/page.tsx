@@ -88,7 +88,6 @@ const Page = () => {
         </Tray>
       </Section>
       <BannerSection />
-
     </Main>
   )
 }

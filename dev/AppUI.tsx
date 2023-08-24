@@ -52,6 +52,14 @@ export const AppUI = () => {
                         <p>Example of animated type along SVG path</p>
                     </article>
                 </Link>
+                <Link href="/components/feature-panels" className={clsx(link, interactable)}>
+                    <article className={card}>
+                        <h1>
+                            Feature panels
+                        </h1>
+                        <p>Example implementation of sticky overlapping panels</p>
+                    </article>
+                </Link>
             </section>
         </section>
     )
