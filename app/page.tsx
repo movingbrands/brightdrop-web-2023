@@ -1,7 +1,7 @@
-import {h1} from '@/style/typography.css'
+import { AppUI } from '@/components/dev/AppUI'
 
 const page = () => {
-  return <h1 className={h1}></h1>
+  return <AppUI />
 }
 
 export default page

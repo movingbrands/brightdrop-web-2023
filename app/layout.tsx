@@ -1,5 +1,5 @@
-import {Metadata} from 'next'
-import {overpass} from '@/style/fonts'
+import { Metadata } from 'next'
+import { overpass } from '@/style/fonts'
 
 import '../style/global.css'
 
@@ -12,7 +12,7 @@ interface Layout {
   children: React.ReactNode
 }
 
-const Layout = ({children}: Layout) => {
+const Layout = ({ children }: Layout) => {
   return (
     <html lang="en">
       <head />
