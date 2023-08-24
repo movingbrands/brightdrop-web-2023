@@ -1,4 +1,4 @@
-import { AppUI } from '@/components/dev/AppUI'
+import { AppUI } from '@/dev/AppUI'
 
 const page = () => {
   return <AppUI />

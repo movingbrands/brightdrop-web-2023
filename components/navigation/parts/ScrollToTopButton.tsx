@@ -2,7 +2,7 @@
 
 import clsx from 'clsx'
 import {useAppStore} from '@/utils/app-store'
-import {actionButton} from '../Button.css'
+import {actionButton} from '../../Button/Button.css'
 import {scrollButton, visible} from './ScrollToTopButton.css'
 import {interactable} from '@/style/interactable.css'
 import {midblue} from '@/style/colors'

@@ -1,7 +1,7 @@
-import {AnimatedMain} from '@/components/content/Main'
+import {Main} from '@/components/content/Main'
 
 const Page = () => {
-  return <AnimatedMain>404</AnimatedMain>
+  return <Main>404</Main>
 }
 
 export default Page

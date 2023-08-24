@@ -5,10 +5,10 @@ import { h1, h4, p } from '@/style/typography.css'
 import clsx from 'clsx'
 import { line, lineHighlight, headline } from './Headline.css'
 import { useEffect, useState } from 'react'
-import { button, large } from './Button.css'
 import { interactable } from '@/style/interactable.css'
-import { MotionLink } from './Link'
 import { routes } from '@/sitemap'
+import { MotionLink } from '../common/Link'
+import { button, large } from '../Button/Button.css'
 
 const variants: Record<'initial' | 'visible', Variant> = {
   initial: (delay) => ({

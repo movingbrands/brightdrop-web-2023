@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import {closed, navButton, path} from './NavButton.css'
 import {interactable} from '@/style/interactable.css'
-import {actionButton} from '../Button.css'
+import {actionButton} from '../../Button/Button.css'
 import {forwardRef} from 'react'
 import {motion} from 'framer-motion'
 

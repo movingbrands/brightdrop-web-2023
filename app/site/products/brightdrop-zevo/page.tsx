@@ -1,18 +1,18 @@
 import { AnimatedHeader } from '@/components/content/Header'
-import { AnimatedMain } from '@/components/content/Main'
+import { Main } from '@/components/content/Main'
 import { h1, h2, h3 } from '@/style/typography.css'
 import { Section } from '@/components/content/Section'
 import { Title } from '@/components/typography/Title'
-import { Placeholder } from '@/components/Placeholder'
+import { Placeholder } from '@/components/common/Placeholder'
 import { Card, CardLayout } from '@/components/layouts/CardLayout'
 import { Tray, TrayCard } from '@/components/content/Tray'
 import { BannerSection } from '@/components/sections/Banner'
-import { Headline } from '@/components/Headline'
-import { ZevoComparisonSection } from '@/components/ZevoComparison'
+import { Headline } from '@/components/typography/Headline'
+import { ZevoComparisonSection } from '@/components/ZevoComparison/ZevoComparison'
 
 const Page = () => {
   return (
-    <AnimatedMain>
+    <Main>
       <AnimatedHeader background="navy">
         <Headline
           lines={[
@@ -81,7 +81,7 @@ const Page = () => {
         </Tray>
       </Section>
       <BannerSection />
-    </AnimatedMain>
+    </Main>
   )
 }
 

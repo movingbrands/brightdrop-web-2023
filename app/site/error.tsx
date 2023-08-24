@@ -1,9 +1,9 @@
 'use client'
 
-import {AnimatedMain} from '@/components/content/Main'
+import { Main } from '@/components/content/Main'
 
 const Page = () => {
-  return <AnimatedMain>Error</AnimatedMain>
+  return <Main>Error</Main>
 }
 
 export default Page

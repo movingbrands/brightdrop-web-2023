@@ -1,21 +1,19 @@
-import { AnimatedArticle } from '@/components/content/Article'
 import { AnimatedHeader } from '@/components/content/Header'
-import { AnimatedMain } from '@/components/content/Main'
+import { Main } from '@/components/content/Main'
 import { Section } from '@/components/content/Section'
-import { Footer } from '@/components/content/Footer'
 import { h1, h3 } from '@/style/typography.css'
 import { Title } from '@/components/typography/Title'
 import { Tray, TrayCard } from '@/components/content/Tray'
-import { Placeholder } from '@/components/Placeholder'
+import { Placeholder } from '@/components/common/Placeholder'
 import { NewsSection } from '@/components/sections/News'
 import { BannerSection } from '@/components/sections/Banner'
-import { Headline } from '@/components/Headline'
+import { Headline } from '@/components/typography/Headline'
 
 const Page = () => {
   return (
-    <AnimatedMain>
+    <Main>
       <AnimatedHeader>
-      <Headline
+        <Headline
           lines={[
             {
               content: 'The future of'
@@ -69,7 +67,7 @@ const Page = () => {
       </Section>
       <BannerSection />
 
-    </AnimatedMain>
+    </Main>
   )
 }
 

@@ -1,5 +1,5 @@
-import { card, container, header, section } from '@/components/dev/AppUI.css'
-import { button } from '@/components/Button.css'
+import { card, container, header, section } from '@/dev/AppUI.css'
+import { button } from '@/components/Button/Button.css'
 import clsx from 'clsx'
 import { h3 } from '@/style/typography.css'
 

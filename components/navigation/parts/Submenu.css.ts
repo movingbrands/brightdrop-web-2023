@@ -1,6 +1,6 @@
 import {black, midblue, offwhite, white} from '@/style/colors'
 import {globalStyle, keyframes, style} from '@vanilla-extract/css'
-import {fadeIn, fadeOut} from './animation.css'
+import {fadeIn, fadeOut} from '../../../style/animation.css'
 import {
   breakpoints,
   buttonHeight,
@@ -8,7 +8,7 @@ import {
   padding,
   submenuExpanded
 } from '@/style/sizes'
-import {caret} from './Navigation.css'
+import {caret} from '../Navigation.css'
 
 // Main container for Submenu
 

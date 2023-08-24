@@ -1,7 +1,7 @@
-import { AnimatedIcon } from '@/components/lottie/AnimatedIcon'
+import { AnimatedIcon } from '@/components/AnimatedIcon/AnimatedIcon'
 import clsx from 'clsx'
-import { AnimationName } from '@/components/lottie/animations'
-import { card, container, header, section } from '@/components/dev/AppUI.css'
+import { AnimationName } from '@/components/AnimatedIcon/animations'
+import { card, container, header, section } from '@/dev/AppUI.css'
 import { h3 } from '@/style/typography.css'
 
 interface Wrapper {

@@ -1,16 +1,16 @@
 import { AnimatedHeader } from '@/components/content/Header'
-import { AnimatedMain } from '@/components/content/Main'
+import { Main } from '@/components/content/Main'
 import { h1, h2, h3, h4 } from '@/style/typography.css'
 import { BannerSection } from '@/components/sections/Banner'
 import { Section } from '@/components/content/Section'
 import { Title } from '@/components/typography/Title'
-import { Placeholder } from '@/components/Placeholder'
+import { Placeholder } from '@/components/common/Placeholder'
 import { Card, CardLayout } from '@/components/layouts/CardLayout'
-import { Headline } from '@/components/Headline'
+import { Headline } from '@/components/typography/Headline'
 
 const Page = () => {
   return (
-    <AnimatedMain>
+    <Main>
       <AnimatedHeader>
         <Headline
           lines={[
@@ -93,7 +93,7 @@ const Page = () => {
         </Placeholder>
       </Section>
       <BannerSection inset />
-    </AnimatedMain>
+    </Main>
   )
 }
 

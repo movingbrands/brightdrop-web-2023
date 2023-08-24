@@ -1,6 +1,6 @@
 import {AnimatedArticle} from '@/components/content/Article'
 import {AnimatedHeader} from '@/components/content/Header'
-import {AnimatedMain} from '@/components/content/Main'
+import {Main} from '@/components/content/Main'
 import {Section} from '@/components/content/Section'
 import {Footer} from '@/components/content/Footer'
 import {h1} from '@/style/typography.css'
@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const Page = () => {
   return (
-    <AnimatedMain>
+    <Main>
       <AnimatedHeader>
         <h1 className={h1}>All products</h1>
       </AnimatedHeader>
@@ -34,7 +34,7 @@ const Page = () => {
           </Link>
         </AnimatedArticle>
       </Section>
-    </AnimatedMain>
+    </Main>
   )
 }
 

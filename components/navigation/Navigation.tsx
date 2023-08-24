@@ -1,6 +1,6 @@
 'use client'
 
-import { PointerEventHandler, useEffect, useMemo } from 'react'
+import { PointerEventHandler, useMemo } from 'react'
 import { CaretDownIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
 import clsx from 'clsx'
@@ -26,11 +26,9 @@ import {
     navigation,
     signIn,
     trigger,
-    visible,
     navList,
     navItem,
     dynamicNavBackground,
-    contactVisible
 } from './Navigation.css'
 import {
     backButton,
@@ -44,17 +42,16 @@ import {
     submenuList,
     submenuSection,
     submenuSectionHeader
-} from './Submenu.css'
-import { Logo } from './Logo'
+} from './parts/Submenu.css'
+import { Logo } from './parts/Logo'
 import { ScreenSize, WindowSize, useAppStore } from '@/utils/app-store'
-import { button } from '../Button.css'
+import { button } from '../Button/Button.css'
 import { h2, h4, small } from '@/style/typography.css'
 import { interactable } from '@/style/interactable.css'
 import { breakpoints, navExpanded, navHeight, padding } from '@/style/sizes'
-import { MotionNavButton, NavButton } from './NavButton'
-import { MotionNavLink, NavLink } from './NavLink'
-import { ScrollToTopButton } from './ScrollToTopButton'
-import { scrollbar } from '@/style/scrollbar.css'
+import { MotionNavButton } from './parts/NavButton'
+import { MotionNavLink, NavLink } from './parts/NavLink'
+import { ScrollToTopButton } from './parts/ScrollToTopButton'
 import { routes } from '@/sitemap'
 import { clamp } from '@/utils/number'
 

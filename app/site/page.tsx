@@ -1,6 +1,6 @@
-import { Headline } from '@/components/Headline'
+import { Headline } from '@/components/typography/Headline'
 import { AnimatedHeader } from '@/components/content/Header'
-import { AnimatedMain } from '@/components/content/Main'
+import { Main } from '@/components/content/Main'
 // import { CareersSection } from '@/sections/page/home/Careers'
 // import { EcosystemSection } from '@/sections/page/home/Ecosystem'
 import { NewsSection } from '@/components/sections/News'
@@ -10,12 +10,12 @@ import { Section } from '@/components/content/Section'
 import { Title } from '@/components/typography/Title'
 import { Card, CardLayout } from '@/components/layouts/CardLayout'
 import { h2, h3 } from '@/style/typography.css'
-import { Placeholder } from '@/components/Placeholder'
+import { Placeholder } from '@/components/common/Placeholder'
 import { BannerSection } from '@/components/sections/Banner'
 
 const Homepage = () => {
   return (
-    <AnimatedMain background="offwhite">
+    <Main background="offwhite">
       <AnimatedHeader background="navy">
         <Headline
           lines={[
@@ -80,7 +80,7 @@ const Homepage = () => {
         <Title headline="Careers" />
         <Placeholder />
       </Section>
-    </AnimatedMain>
+    </Main>
   )
 }
 

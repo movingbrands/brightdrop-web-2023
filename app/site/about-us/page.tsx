@@ -1,17 +1,17 @@
 import { AnimatedArticle } from '@/components/content/Article'
 import { AnimatedHeader } from '@/components/content/Header'
-import { AnimatedMain } from '@/components/content/Main'
+import { Main } from '@/components/content/Main'
 import { Section } from '@/components/content/Section'
 import { Footer } from '@/components/content/Footer'
 import { h1, h3, h4 } from '@/style/typography.css'
-import { Placeholder } from '@/components/Placeholder'
+import { Placeholder } from '@/components/common/Placeholder'
 import { Title } from '@/components/typography/Title'
 import { Tray, TrayCard } from '@/components/content/Tray'
 import { BannerSection } from '@/components/sections/Banner'
 
 const Page = () => {
   return (
-    <AnimatedMain>
+    <Main>
       <AnimatedHeader>
         <h1 className={h1}>About us</h1>
       </AnimatedHeader>
@@ -41,7 +41,7 @@ const Page = () => {
       </Section>
       <BannerSection />
 
-    </AnimatedMain>
+    </Main>
   )
 }
 

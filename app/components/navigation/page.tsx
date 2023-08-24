@@ -1,8 +1,8 @@
 import clsx from 'clsx'
-import { container, header, section } from '@/components/dev/AppUI.css'
+import { container, header, section } from '@/dev/AppUI.css'
 import { h3 } from '@/style/typography.css'
-import { Navigation } from '@/components/navigation/Navigation'
-import { AppStore } from '@/components/AppStore'
+import { Navigation } from '@/components/Navigation/Navigation'
+import { AppStore } from '@/components/AppStore/AppStore'
 
 const page = () => (
     <section className={section}>

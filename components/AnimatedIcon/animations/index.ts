@@ -1,4 +1,4 @@
-import type * as keys from './.'
+import type * as keys from '.'
 export type AnimationName = keyof typeof keys
 
 export const car = async () => await import('./Car_ICON.json')
