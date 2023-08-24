@@ -1,24 +1,24 @@
 'use client'
 
-import {useAppStore} from '@/utils/app-store'
-import {useMotionValueEvent, useScroll} from 'framer-motion'
-import {useEffect} from 'react'
-import {DevPanel} from './AppStore.css'
+import { useAppStore } from '@/utils/app-store'
+import { debounce } from '@/utils/debounce'
+import { useMotionValueEvent, useScroll } from 'framer-motion'
+import { useEffect } from 'react'
 
 export const AppStore = () => {
   const [setScroll, setWindowSize] = useAppStore((state) => [
     state.setScroll,
     state.setWindowSize
   ])
-  const {scrollY, scrollYProgress} = useScroll()
+  const { scrollY, scrollYProgress } = useScroll()
 
   useMotionValueEvent(scrollY, 'change', (v) =>
     setScroll(v, scrollYProgress.get())
   )
 
-  const handleResize = () => {
+  const handleResize = debounce(() => {
     setWindowSize(window.innerWidth, window.innerHeight)
-  }
+  }, 32)
   useEffect(() => {
     handleResize()
     window.addEventListener('resize', handleResize)
@@ -28,9 +28,4 @@ export const AppStore = () => {
   }, [])
 
   return null
-  // <aside className={DevPanel}>
-  //     <pre>
-  //         {JSON.stringify(store, null, 2)}
-  //     </pre>
-  // </aside>
 }

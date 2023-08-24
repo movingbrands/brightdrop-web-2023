@@ -1,4 +1,4 @@
-import { midblue, white } from '@/style/colors'
+import { midblue } from '@/style/colors'
 import { breakpoints } from '@/style/sizes'
 import { style } from '@vanilla-extract/css'
 
