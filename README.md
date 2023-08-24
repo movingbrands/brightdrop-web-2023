@@ -1,6 +1,6 @@
 # BrightDrop Web 2023
 
-![BrightDrop and Moving Brands](documentation/banner.png)
+![BrightDrop and Moving Brands](./documentation/banner.png)
 
 This repository contains a collection of prototypes to support our collaboration to refresh [gobrightdrop.com](https://gobrightdrop.com) in mid-2023. The examples focus on use of motion throughout the site.
 
