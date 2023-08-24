@@ -2,20 +2,15 @@
 
 import clsx from "clsx";
 import { animatedPlaceholder, backgroundFill, placeholder, placeholderVisible } from "./Placeholder.css";
-import { CSSProperties, useMemo, useRef } from "react";
+import { CSSProperties, useRef } from "react";
 import { useInView } from "framer-motion";
 
-type Sticky = {
-    align: 'top' | 'bottom'
-    amount: string | number
-}
 interface Placeholder {
     children?: React.ReactNode;
     blank?: boolean
     animated?: boolean
     style?: Partial<CSSProperties>
 }
-
 
 const BasicPlaceholder = ({ children, style, blank = false }: Placeholder) => {
 
@@ -24,7 +19,7 @@ const BasicPlaceholder = ({ children, style, blank = false }: Placeholder) => {
     )
 }
 
-const backgroundColor = `rgb(230,230,230)`
+// const backgroundColor = `rgb(230,230,230)`
 
 const AnimatedPlaceholder = ({ children, style, blank = false }: Placeholder) => {
     const ref = useRef<HTMLDivElement>(null)

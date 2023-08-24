@@ -36,17 +36,46 @@ const Page = () => {
       </Section>
       <Section inset>
         <Title headline="Key features" />
-        <Placeholder style={{ position: 'sticky', top: 80, background: "rgb(220,220,220)", aspectRatio: `2.5 / 1`, zIndex: 1 }} >
+        <Placeholder style={{
+          position: 'sticky',
+          top: 100,
+          background: "rgb(220,220,220)",
+          aspectRatio: `2.5 / 1`,
+          zIndex: 1,
+          alignItems: 'flex-start',
+          justifyContent: 'flex-start',
+          boxShadow: `0px 4px 19px 0px rgba(0, 0, 0, 0.10)`
+        }} >
           <h1 className={h3}>Key feature 1</h1>
         </Placeholder>
-        <Placeholder style={{ position: 'sticky', top: 120, background: "rgb(190,190,190)", aspectRatio: `2.5 / 1`, zIndex: 2}} >
+        <Placeholder style={{
+          position: 'sticky',
+          top: 100, 
+          transform: 'translateY(80px)',
+          background: "rgb(190,190,190)",
+          aspectRatio: `2.5 / 1`,
+          zIndex: 2,
+          alignItems: 'flex-start',
+          justifyContent: 'flex-start',
+          boxShadow: `0px 4px 19px 0px rgba(0, 0, 0, 0.10)`
+        }} >
           <h1 className={h3}>Key feature 2</h1>
         </Placeholder>
-        <Placeholder style={{ position: 'sticky', top: 160, background: "rgb(160,160,160)", aspectRatio: `2.5 / 1`, zIndex: 3 }} >
+        <Placeholder style={{
+          position: 'sticky',
+          top: 100,
+          transform: 'translateY(130px)',
+          background: "rgb(160,160,160)",
+          aspectRatio: `2.5 / 1`,
+          zIndex: 3,
+          alignItems: 'flex-start',
+          justifyContent: 'flex-start',
+          boxShadow: `0px 4px 19px 0px rgba(0, 0, 0, 0.10)`
+        }} >
           <h1 className={h3}>Key feature 3</h1>
         </Placeholder>
       </Section>
-      <Section>
+      <Section inset>
         <Title headline="How it works" />
         <Placeholder>
           <h1 className={h3}>How it works</h1>
