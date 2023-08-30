@@ -23,10 +23,11 @@ export const header = style({
 })
 
 export const card = style({
-    padding: 24,
-    marginBottom: 16,
+    fontSize: 14,
+    padding: 16,
+    marginBottom: 8,
     background: white,
-    borderRadius: 16
+    borderRadius: 12
 })
 
 export const link = style({

@@ -8,18 +8,18 @@ export const AppUI = () => {
     return (
         <section className={clsx(container)}>
             <section className={section}>
-                <h1 className={clsx(header, h3)}>Prototype</h1>
+                <h1 className={clsx(header, h3)}>Global motion</h1>
                 <Link href="/site" className={clsx(link, interactable)}>
                     <article className={card}>
                         <h1>
-                            Global motion prototype
+                            Motion prototype
                         </h1>
-                        <p>The main site prototype</p>
+                        <p>The main site prototype, providing guidance on how to combine and choreograph different types of motion across the site</p>
                     </article>
                 </Link>
             </section>
             <section className={section}>
-                <h1 className={clsx(header, h3)}>Component examples</h1>
+                <h1 className={clsx(header, h3)}>Components</h1>
                 <Link href="/components/animated-icons" className={clsx(link, interactable)}>
                     <article className={card}>
                         <h1>
@@ -36,6 +36,9 @@ export const AppUI = () => {
                         <p>Animated button states</p>
                     </article>
                 </Link>
+            </section>
+            <section className={section}>
+                <h1 className={clsx(header, h3)}>Global components</h1>
                 <Link href="/components/navigation" className={clsx(link, interactable)}>
                     <article className={card}>
                         <h1>
@@ -44,6 +47,9 @@ export const AppUI = () => {
                         <p>Global navigation component</p>
                     </article>
                 </Link>
+            </section>
+            <section className={section}>
+                <h1 className={clsx(header, h3)}>Example implementations</h1>
                 <Link href="/components/type-motion" className={clsx(link, interactable)}>
                     <article className={card}>
                         <h1>
@@ -55,9 +61,17 @@ export const AppUI = () => {
                 <Link href="/components/feature-panels" className={clsx(link, interactable)}>
                     <article className={card}>
                         <h1>
-                            Feature panels
+                            Feature panels (from top)
                         </h1>
-                        <p>Example implementation of sticky overlapping panels</p>
+                        <p>Example implementation of sticky overlapping panels which stack from the top</p>
+                    </article>
+                </Link>
+                <Link href="/components/feature-panels" className={clsx(link, interactable)}>
+                    <article className={card}>
+                        <h1>
+                            Feature panels (from bottom)
+                        </h1>
+                        <p>Example implementation of sticky overlapping panels which stack from the bottom</p>
                     </article>
                 </Link>
             </section>
