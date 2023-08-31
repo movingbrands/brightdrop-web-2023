@@ -2,9 +2,11 @@
 
 import { h1, h2 } from '@/style/typography.css'
 import clsx from 'clsx'
-import { svg, text, wrapper } from './PathHeadline.css'
+import { svg, text, wrapper } from './TypeMotion.css'
 import {
+  Variant,
   motion,
+  useInView,
   useScroll,
   useTransform
 } from 'framer-motion'
@@ -15,14 +17,23 @@ interface PathHeadline {
   input?: [number, number]
 }
 
-export const PathHeadline = ({ title, input = [0.0, 1.0] }: PathHeadline) => {
+const variants: Record<string, Variant> = {
+  initial: {
+    startOffset: '-80%',
+    transition: {
+      duration: 1
+    }
+  },
+  visible: {
+    startOffset: '70%',
+    transition: {
+      duration: 1
+    }
+  }
+}
+export const TypeMotion = ({ title, input = [0.0, 1.0] }: PathHeadline) => {
   const ref = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['start end', 'end end']
-  })
-
-  const startOffset = useTransform(scrollYProgress, input, ['-80%', '70%'])
+  const isInView = useInView(ref, { amount: 1 })
 
   return (
     <div className={wrapper} ref={ref}>
@@ -44,7 +55,9 @@ export const PathHeadline = ({ title, input = [0.0, 1.0] }: PathHeadline) => {
           <motion.textPath
             className={clsx(h2, text)}
             href="#path"
-            startOffset={startOffset}
+            variants={variants}
+            initial="initial"
+            animate={isInView ? 'visible' : 'initial'}
           >
             {title}
           </motion.textPath>
