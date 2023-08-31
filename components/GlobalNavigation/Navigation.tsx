@@ -297,9 +297,9 @@ export const Navigation = () => {
                                 onPointerEnter={preventHover}
                                 onPointerLeave={preventHover}
                             >
-                                <section className={clsx(submenuSection, fullSection)}>
+                                {/* <section className={clsx(submenuSection, fullSection)}>
                                     <h1 className={h2}>Built for the next generation of delivery</h1>
-                                </section>
+                                </section> */}
 
                                 <section className={submenuSection}>
                                     <h1 className={submenuSectionHeader}>Electric Vehicles</h1>

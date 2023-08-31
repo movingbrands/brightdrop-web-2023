@@ -22,6 +22,15 @@ export const header = style({
     textTransform: 'capitalize'
 })
 
+export const codeWrapper = style({
+    padding: 8,
+    background: 'rgba(0,0,0,0.1)',
+    borderRadius: 4,
+    fontFamily: 'Andale Mono, monospace',
+    textTransform: 'initial'
+
+})
+
 export const card = style({
     fontSize: 14,
     padding: 16,
